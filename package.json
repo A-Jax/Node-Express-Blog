@@ -1,0 +1,17 @@
+{
+  "name": "Blog Me!",
+  "version": "1.0.0",
+  "description": "Session based blogging api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jax Morgans",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "nodemailer": "^4.1.2"
+  }
+}
