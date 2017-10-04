@@ -1,0 +1,23 @@
+<% include partials/header%>
+
+<h3>ADMIN PANEL</h3>
+
+
+<br>
+<br>
+
+<div>
+    <form id="blogInput" action="/addblog" method="POST">  <!-- simple form using POST route to node.js -->
+       
+        <h5>Date:</h5> <input type="date" name="blogDate"><br>
+        <h5>Title:</h5> <input type="text" name="blogTitle"><br>
+        <h5>Blog Post:</h5>  <br>
+        
+        <textarea rows="15" cols="30" name="blogContent"></textarea><br>
+        
+        <button style="margin: 2.5px">Post Blog</button>
+    
+    </form>
+</div>
+
+<% include partials/footer %>

@@ -1,0 +1,42 @@
+<% include partials/header%>
+
+   <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link active" href="https://blogging-app-jax22210.c9users.io">Post Blog</a>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="blog-header">
+      <div class="container">
+        <h1 class="blog-title">Clint Eastwood | Blog</h1>
+        <p class="lead blog-description">A session based blog using node.js and express</p>
+      </div>
+    </div>
+
+    <div class="container">
+      
+      <% for(var i=Blog.length -1; i>=0; i--) { %>
+      <div class="row">
+          
+     <!-- Loop through array of blog objects, backwards, to print end of array to screen, newest blog at the top -->
+
+            <div class="blog-post">
+              <h2 class="blog-post-title"><%= Blog[i].Title %></h2> <!-- use object variables to print information dynamicly. -->
+              <p class="blog-post-meta"><%= Blog[i].Date %> by <a href="#">Jax</a></p>
+  
+              <p> <%= Blog[i].Content %></p> 
+            </div><!-- /.blog-post -->
+
+      </div><!-- /.row -->
+       <% } %>
+    </div><!-- /.container -->
+
+
+<% include partials/footer %>
+
+
+     
+
+  
